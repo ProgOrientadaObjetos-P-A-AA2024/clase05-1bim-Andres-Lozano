@@ -12,6 +12,7 @@ public class EjemploTres {
         // crear un arreglo de objetos de tipo Calificacion
         Calificacion [] calificaciones = {new Calificacion(10, "Computación"), 
             new Calificacion(9, "Electrónica")};
+        // es un objeto anonimo donde se lo crea dentro de la asignacion de valores del arreglo 
         
         for (int i = 0; i < calificaciones.length; i++) {
             Calificacion objetoCalificacion = calificaciones[i];
