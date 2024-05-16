@@ -24,10 +24,15 @@ Profesor profesor2= new Profesor("Richard","contrato");
         
         for (int i = 0; i < calificaciones.length; i++) {
             Calificacion objetoCalificacion = calificaciones[i];
-            System.out.printf("%s - %.2f- Profesor(%s)\n", 
+            System.out.printf("%s - %.2f- Profesor(%s-%s)\n", 
                     objetoCalificacion.obtenerNombreMateria(),
                     objetoCalificacion.obtenerNota(),
-                    objetoCalificacion.obtenerProfesor().obtenerNombre());
+                    objetoCalificacion.obtenerProfesor().obtenerNombre(),
+                    objetoCalificacion.obtenerProfesor().obtenerTipo());
+            
+            // llamamos a los tres objetos para imprimir y obetner el nombre
+            // la nota y el profesor y depues del metodo obtenerProfesor
+            // llamamos a obtenerNormbre para asignarle un nombre al profesor
         }
         
     }
